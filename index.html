@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Miguel Espada Ruiz</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
+
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+        <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+        <script>
+            var d3v5 = window.d3;
+            window.d3 = null;
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+
+    </head>
+
+    <body>
+
+      <div class="header">
+        <a href="#default" class="logo"><img id="image-logo" src="images/mountain.png"alt="foto-logo" height=75></a>
+        <div class="header-right">
+          <a class="active" href="#personal">Profile</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+
+      <div class="personal-section" id="personal">
+        <h1 id="title-profile"> Profile </h1>
+        <hr>
+          <div class="personal-info">
+              <div class="personal-left">
+                  <img class="image-personal" src="images/miguel.jpg"alt="foto-personal-miguel" height=200>
+                  <h2 id="title-name"> Miguel Espada Ruiz </h1>
+                  <h3> Data Scientist </h2>
+              </div>
+              <div class="personal-right">
+                    <h2> Bio </h2>
+                    <p class="bio">
+                      Theoretical physicist diving in the data science world. Currently working in the banking sector developing credit risk models.
+                    </p>
+                    <h2> Details </h2>
+                    <p>
+                        <strong> Age: </strong><br>
+                        25 <br>
+                        <strong> Location: </strong><br>
+                        Madrid, Spain
+                    </p>
+                    <a href="assets/CV Miguel Espada vDS.pdf" class="btn btn-info btn-lg">
+                      <span class="glyphicon glyphicon-cloud-download"></span> Curriculum Vitae
+                    </a>
+              </div>
+            </div>
+        </div>
+
+      <div class="experience" id="experience">
+        <div id="experience-title">
+            <br>
+            <h1> Experience </h1>
+            <hr>
+        </div>
+        <div id="container">
+              <div id="mapid">
+                <script type="text/javascript" src="js/map.js"></script>
+              </div>
+              <div id="experience-text">
+                <div id="Career">
+                  <h2> Career </h2>
+                      <div class="experience-row">
+                          <div class="col-md-4">
+                              <h4>Management Solutions </h4>
+                              <p class="experience-period">
+                                  October 2017 - current
+                              </p>
+                          </div>
+                          <div class="col-md-8">
+                              <p>
+                                  <strong>Data Scientist</strong><br>
+                                  <span class="hidden-phone">
+                                      Consultory firm specliacized in banking sector. Model development for quantification of credit risk (Admission Score, Probability of Default, Loss Given Default).  <br>
+                                      The main analytical tools used were SAS, SQL and Python.
+                                  </span>
+                              </p>
+                          </div>
+                      </div>
+              </div>
+              <div id="Education">
+                <h2> Education </h2>
+                    <div class="education-row">
+                        <div class="col-md-4">
+                            <h4>U-TAD</h4>
+                            <p class="experience-period">
+                                September 2019 - July 2020
+                            </p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <strong>Master in Data Science & Big Data</strong><br>
+                                <span class="hidden-phone">
+                                    Big Data (Spark, Hadoop, Cloud: AWS, Azure, ..) . Machine Learning (SVM, Decision Tree, Random Forest, Naive
+                                    Bayes,K-means, Logistic Regression, Dendrograms,..). Deep Learning (Neural Networks, MLP, CNN , RNN , NLP , Image
+                                    Processing, ..). Visualization (PowerBI, Tableau, Kibana, seaborn, matplotlib, plotly, Carto, D3, Leaflet, Dash..)
+                                    <br><strong> Master dissertation</strong>: "Occupation control: Deep Learning approach"
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="education-row">
+                        <div class="col-md-4">
+                            <h4>ICADE</h4>
+                            <p class="experience-period">
+                                October 2017 - July 2019
+                            </p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <strong>Master in Business Consultory</strong><br>
+                                <span class="hidden-phone">
+                                  Strong economical and finance content, focused in the banking sector. Risk quantification and management (credit, market, operacional risk..)
+                                  Specialization in Data Science.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="education-row">
+                        <div class="col-md-4">
+                            <h4>IFT- UAM</h4>
+                            <p class="experience-period">
+                                September 2016 - September 2017
+                            </p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <strong>MsC in Theoretical Physics</strong><br>
+                                <span class="hidden-phone">
+                                    The Msc covered the state of the art of modern theoretical physics (Quantum Field and String Theory, Elementary Particles, Cosmology, General Gravitation Theory,..)
+                                    Development of advanced mathematical tools to solve physical problems, and its direct contrast with
+                                    experimental data. Use of computational systems and programs to analyse statistical data (Python).
+                                    Development of scientific research in an independent way inside completely new research
+                                    environments.
+                                    <br><strong> Master dissertation</strong>: "Topological Quantum Computation"
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="skills" id="skills">
+        <h1> Skills </h1>
+        <hr>
+        <div id="container-skills">
+          <div class="skills-radarchart">
+            <h2>Core Skills</h2>
+
+            <script src="js/radarchart.js"></script>
+            <script>
+
+                /* Radar chart design created by Nadieh Bremer - VisualCinnamon.com */
+
+                //////////////////////////////////////////////////////////////
+                //////////////////////// Set-Up //////////////////////////////
+                //////////////////////////////////////////////////////////////
+
+                var margin = {top: 100, right: 100, bottom: 100, left: 100},
+                  width = Math.min(500, window.innerWidth - 10) - margin.left - margin.right,
+                  height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
+
+                //////////////////////////////////////////////////////////////
+                ////////////////////////// Data //////////////////////////////
+                //////////////////////////////////////////////////////////////
+
+                var data = [
+                      [//iPhone
+                      {axis:"Machine Learning",value:0.5},
+                      {axis:"Deep Learning",value:0.4},
+                      {axis:"NLP",value:0.3},
+                      {axis:"Big Data",value:0.3},
+                      {axis:"Telco",value:0.15},
+                      {axis:"Statistical Analysis",value:0.4},
+                      {axis:"Visualization",value:0.25},
+                      {axis:"Bank & Finance",value:0.4}
+                      ]
+                    ];
+                //////////////////////////////////////////////////////////////
+                //////////////////// Draw the Chart //////////////////////////
+                //////////////////////////////////////////////////////////////
+
+                var color = d3.scale.ordinal().range(["#438a5e","#CC333F","#00A0B0"]);
+
+                var radarChartOptions = {
+                  w: width,
+                  h: height,
+                  margin: margin,
+                  maxValue: 0.5,
+                  levels: 5,
+                  roundStrokes: true,
+                  color: color
+                };
+                //Call function to draw the Radar chart
+                RadarChart(".skills-radarchart", data, radarChartOptions);
+            </script>
+          </div>
+          <div id="skills-tools">
+            <h2>Tools</h2>
+            <div id="d3tool">
+              <script src="js/tools.js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="background-gray" id="contact">
+             <div id="contact" class="container">
+                 <h2>Contact</h2>
+                 <hr>
+
+                 <div class="row">
+                     <div class="social-menu">
+                         <ul>
+                           <li id="linkedin"><a href="https://www.linkedin.com/in/miguespa/"><i class="fa fa-linkedin"></i></a></li>
+                           <li><a href="https://github.com/miguespa/projects.git"><i class="fa fa-github"></i></a></li>
+                           <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=miguespa@ucm.es"><i class="fa fa-google"></i></a></li>
+                           <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+
+
+    </body>
+</html>
